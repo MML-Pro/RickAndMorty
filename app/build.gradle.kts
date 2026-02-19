@@ -39,6 +39,7 @@ android {
         }
     }
     buildFeatures {
+        buildConfig = true
         compose = true
     }
 }
@@ -78,4 +79,5 @@ dependencies {
     implementation(project(":data"))
 
     implementation(libs.kotlinx.serialization.json)
+    implementation(libs.okhttp.logging)
 }
